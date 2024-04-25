@@ -1,0 +1,24 @@
+{
+  "name": "sistema-de-gestao",
+  "productName": "Sistema de Gestão de Trânsito",
+  "description": "Um aplicativo de Gestão de Trânsito construído com Electron",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "Moisés Clemente",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "26.2.2",
+    "electron-builder": "^22.9.1"
+  },
+  "build": {
+    "appId": "com.example.sistema-de-gestao",
+    "productName": "Sistema de Gestão de Trânsito",
+    "win": {
+      "icon": "./assets/img/logo-4.png"
+    }
+  }
+}

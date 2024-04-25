@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' http://localhost;">
+    <link href="./styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <title>Sistema | Login</title>
+  </head>
+  <body>
+   
+     <section class="mainContainer">
+      <!-- left container  -->
+      <section class="leftContainer">
+        <button class="buttonAcess">Acessar como Administrador<i class="bi bi-person-circle"></i></button>
+        <div class="logoImage">
+          <img src="./assets/img/sigla.png" alt="">
+        </div>
+          <h1 class="title">SISTEMA INTEGRADO DE GESTÃO DE INFRACÇÕES DE TRÂNSITO</h1>
+         
+
+          <!-- textError -->
+          <div class="textError" id="textError">
+            <span>Faça o login para acessar a sua área de trabalho</span>
+          </div>
+          <div class="newUser">
+            <button class="LogBtn" id="newUserButton">É usuário novo? </button>
+          </div>
+          <!-- endTextError -->
+      </section>
+      <!-- left Container End -->
+       <section class="formContainer">
+        <!-- formUser -->
+           <form action="" class="formData" id="formData">
+            <header class="headerLogin"><h2>Login <i class="bi bi-person-fill"></i></h2></header>
+             <div class="inputBox boxNomeUser">
+              <label for="">Nome de usuario <i class="bi bi-person-fill"></i></label>
+              <input type="text" id="nomeUser" name="nome" placeholder="Digite o seu nome de usuario...">
+             </div>
+
+             <div class="inputBox boxPasswordUser">
+              <label for="" id="minimizeButton">Senha <i class="bi bi-lock-fill"></i></label>
+              <input type="password" id="passwordUser" name="senha"placeholder="Digite a sua senha...">
+             </div>
+
+             <button class="LogBtn" id="btnLoginUser">Entrar</button>
+
+             <div class="politocy">
+               <span>conheça os nossos <a href="#">termos</a> e politica de <a href="#">Privacidade</a></span>
+             </div>
+           </form>
+           <!-- <a href="./dashboard.html">Admin</a> -->
+           <!-- endFormUser -->
+
+           <!-- formAdmin -->
+           <form action="" class="formData" id="formDataAdmin">
+            <header class="headerLogin"><h2>Admin <i class="bi bi-person-circle"></i></h2></header>
+             <div class="inputBox boxAdminName">
+              <label for="">Nome de usuario <i class="bi bi-person-fill"></i></label>
+              <input type="text" id="userNameAdmin" name="userName" placeholder="Digite o seu nome de usuario...">
+             </div>
+
+             <div class="inputBox boxAdminPass">
+              <label for="" >Senha<i class="bi bi-lock-fill"></i></label>
+              <input type="password" id="passwordAdmin" name="password" placeholder="Digite a sua senha...">
+             </div>
+
+             <button class="LogBtn" id="adminLogin">Entrar</button>
+
+             <span id="cancelButton" class="cancelButtonClose">Voltar</span>
+           </form>
+           <!-- endFormAdmin -->
+       </section>
+      </section>
+    
+
+     <!-- preLoad -->
+     <section class="preLoadContainer">
+        <div class="contentPreLoad">
+          <div class="load1"></div> 
+           <h3>Por favor Aguarde!</h3>
+        </div>
+     </section>
+
+
+   <section class="preLoadContainer  reloadContainer">
+      <div class="contentPreLoad">
+        <div class="load1"></div> 
+         <h3>Por favor Aguarde!</h3>
+      </div>
+   </section>
+     <!-- endPreload -->
+    <script src="./renderer.js" type="module"></script>
+  </body>
+</html>

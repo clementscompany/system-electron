@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+:root{
+    --base--:#010127;
+    --border--:#afacac71;
+    --bg2--:#e9e9e971;
+    --textColor--: aqua;
+    --textColor-2--:#fff;
+    --branca--:#fff;
+    --green-1--: #19eb195d;
+    --green--:green;
+    --red-1--:#ff050581;
+    --red--:red;
+    --preta--:#000;
+    --azul--:#0f87ff9c;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.dashboard{
+    background-color: var(--branca--);
+}
+button{
+    border: none;
+    cursor: pointer;
+    background-color: dodgerblue;
+    font-weight: bold;
+}
+button:hover{
+    background-color: rgba(30, 143, 255, 0.849);
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--border--);
+    border-radius: 8px;
+}
+/* Estilos para a borda arredondada */
+body {
+    border-radius: 10px;
+}
